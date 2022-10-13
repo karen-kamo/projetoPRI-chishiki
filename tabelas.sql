@@ -1,5 +1,5 @@
 CREATE TABLE aluno(
-	id_alu serial,
+	id_alu serial NOT NULL,
 	nome_alu varchar(100),
 	email_alu varchar(350),
 	senha_alu varchar(100),
@@ -9,7 +9,7 @@ CREATE TABLE aluno(
 );
 
 CREATE TABLE professor(
-	id_prof serial,
+	id_prof serial NOT NULL,
 	nome_prof varchar(100),
 	email_prof varchar(350),
 	senha_prof varchar(100),
@@ -18,7 +18,7 @@ CREATE TABLE professor(
 );
 
 CREATE TABLE disciplina(
-	id_disc serial,
+	id_disc serial NOT NULL,
 	nome_disc varchar(100),
 	curso_disc varchar(100),
 	
@@ -26,7 +26,7 @@ CREATE TABLE disciplina(
 );
 
 CREATE TABLE pergunta(
-	id_perg serial,
+	id_perg serial NOT NULL,
 	conteudo_perg varchar(500000),
 	id_alu int,
 	id_disc int,
@@ -39,7 +39,7 @@ CREATE TABLE pergunta(
 );
 
 CREATE TABLE resposta(
-	id_resp serial,
+	id_resp serial NOT NULL,
 	conteudo_resp varchar(500000),
 	id_alu int,
 	id_prof int,
@@ -56,7 +56,7 @@ CREATE TABLE resposta(
 
 --Tabela do relacionamento entre professor e disciplina
 CREATE TABLE professor_disciplina(
-	id_prof_disc serial,
+	id_prof_disc serial NOT NULL,
 	id_prof int,
 	id_disc int,
 	
