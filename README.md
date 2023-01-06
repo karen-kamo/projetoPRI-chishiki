@@ -8,3 +8,4 @@
    <li> Elaboração e desenvolvimento da documentação do projeto; </li>
    <li> Construção dos diagramas UML.</li>
 </ul>
+<p> Dessa forma, o projeto consite em um fórum online destinado aos alunos da nossa instituição, com o objetivo de criar um ambiente que proporcione o esclarecimento de dúvidas e interação entre os usuários envolvidos.</p>
